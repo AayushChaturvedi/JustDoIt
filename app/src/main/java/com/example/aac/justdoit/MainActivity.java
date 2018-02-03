@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,13 +22,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         parentLinearLayout = findViewById(R.id.parent_linear_layout);
     }
+
     public void onAddField(View v) {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final View rowView = inflater.inflate(R.layout.field, null);
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount());
         int count = parentLinearLayout.getChildCount();
         TextView result_field = (TextView)findViewById(R.id.result);
-        result_field.setText(Integer.toString(count));
+        result_field.setText(Integer.toString((count-1)));
+        View view = parentLinearLayout.getChildAt(count-1);
+        if(view instanceof EditText){
+            EditText last = (EditText)view;
+            last.setSelection(0);
+        }
     }
 
     public void onDelete(View v) {

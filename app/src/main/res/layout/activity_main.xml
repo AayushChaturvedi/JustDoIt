@@ -46,9 +46,18 @@
             android:text="@string/add_a_new_item_to_do"
             android:paddingLeft="5dp"/>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have added the following number of tasks in your list"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/result"
-            android:text=""/>
+            android:text="@string/zero"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
     </LinearLayout>
 </ScrollView>
