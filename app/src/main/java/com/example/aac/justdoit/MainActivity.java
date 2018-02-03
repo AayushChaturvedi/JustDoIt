@@ -7,21 +7,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private LinearLayout parentLinearLayout;
-    private LinearLayout childLinearLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         parentLinearLayout = findViewById(R.id.parent_linear_layout);
-        childLinearLayout = findViewById(R.id.child_linear_layout);
     }
 
     public void onAddField(View v) {
@@ -30,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount());
         int count = parentLinearLayout.getChildCount();
         TextView result_field = findViewById(R.id.result);
-        result_field.setText(Integer.toString((count-1)));
-        childLinearLayout = (LinearLayout) parentLinearLayout.getChildAt(0);
+        result_field.setText(Integer.toString(count));
     }
 
     public void onDelete(View v) {
