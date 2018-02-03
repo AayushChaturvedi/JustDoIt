@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         final View rowView = inflater.inflate(R.layout.field, null);
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount());
         int count = parentLinearLayout.getChildCount();
-        TextView result_field = (TextView)findViewById(R.id.result);
+        TextView result_field = findViewById(R.id.result);
         result_field.setText(Integer.toString((count-1)));
         View view = parentLinearLayout.getChildAt(count-1);
         if(view instanceof EditText){
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public void onDelete(View v) {
         parentLinearLayout.removeView((View) v.getParent());
         int count = parentLinearLayout.getChildCount();
-        TextView result_field = (TextView)findViewById(R.id.result);
+        TextView result_field = findViewById(R.id.result);
         result_field.setText(Integer.toString(count));
     }
 
