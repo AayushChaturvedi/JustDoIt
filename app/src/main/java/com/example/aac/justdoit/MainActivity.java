@@ -14,12 +14,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private LinearLayout parentLinearLayout;
+    private LinearLayout childLinearLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         parentLinearLayout = findViewById(R.id.parent_linear_layout);
+        childLinearLayout = findViewById(R.id.child_linear_layout);
     }
 
     public void onAddField(View v) {
@@ -29,11 +31,7 @@ public class MainActivity extends AppCompatActivity {
         int count = parentLinearLayout.getChildCount();
         TextView result_field = findViewById(R.id.result);
         result_field.setText(Integer.toString((count-1)));
-        View view = parentLinearLayout.getChildAt(count-1);
-        if(view instanceof EditText){
-            EditText last = (EditText)view;
-            last.setSelection(0);
-        }
+        childLinearLayout = (LinearLayout) parentLinearLayout.getChildAt(0);
     }
 
     public void onDelete(View v) {
