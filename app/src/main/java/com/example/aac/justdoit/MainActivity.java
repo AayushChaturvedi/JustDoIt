@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,11 +24,17 @@ public class MainActivity extends AppCompatActivity {
     public void onAddField(View v) {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final View rowView = inflater.inflate(R.layout.field, null);
-        parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
+        parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount());
+        int count = parentLinearLayout.getChildCount();
+        TextView result_field = (TextView)findViewById(R.id.result);
+        result_field.setText(Integer.toString(count));
     }
 
     public void onDelete(View v) {
         parentLinearLayout.removeView((View) v.getParent());
+        int count = parentLinearLayout.getChildCount();
+        TextView result_field = (TextView)findViewById(R.id.result);
+        result_field.setText(Integer.toString(count));
     }
 
     @Override
@@ -49,5 +57,4 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
 }
