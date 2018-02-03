@@ -3,4 +3,6 @@
     <string name="add_a_new_item_to_do">Add a new item to do</string>
     <string name="type_here_the_name_of_the_task">Type here the name of the task</string>
     <string name="zero">0</string>
+    <string name="done">DONE!</string>
+    <string name="you_have_added_the_following_number_of_tasks_in_your_list">You have added the following number of tasks in your list</string>
 </resources>
