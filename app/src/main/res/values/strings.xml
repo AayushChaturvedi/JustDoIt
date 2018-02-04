@@ -5,4 +5,5 @@
     <string name="zero">0</string>
     <string name="done">DONE!</string>
     <string name="you_have_added_the_following_number_of_tasks_in_your_list">You have added the following number of tasks in your list</string>
+    <string name="add_a_new_task">ADD A NEW TASK</string>
 </resources>
