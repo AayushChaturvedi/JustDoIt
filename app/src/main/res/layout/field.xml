@@ -20,5 +20,5 @@
         android:layout_weight="1"
         android:onClick="onDelete"
         android:text="@string/done"
-        android:textSize="20sp"/>
+        android:textSize="16dp"/>
 </LinearLayout>
