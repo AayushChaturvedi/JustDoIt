@@ -9,10 +9,11 @@
     <EditText
         android:id="@+id/list_item"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:layout_weight="5"
         android:hint="@string/type_here_the_name_of_the_task"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
     <Button
         android:id="@+id/delete_button"
         android:layout_width="20dp"
