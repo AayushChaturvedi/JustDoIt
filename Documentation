@@ -1,0 +1,53 @@
+Just Do It: An application that builds up a simple and ready to ToDo list to kick start your day and also reminds you about your tasks at the end of the day.
+
+This application helps a person to create a regular To Do List. It supports adding and deleting items on the go, deleting multiple items as a batch, and a reminder for uncompleted items till the end of the day. The app is quite user friendly and will hence help in improving productivity of the user.
+
+
+We welcome feedback on Just Do It,suggestions for new or improved features.
+https://github.com/AayushChaturvedi
+
+1.LICENSING
+
+Copyright <2018>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+2.PROBLEMS IT SOLVES
+
+a-Management of the daily tasks needed to be done in this world of messed up schedule of individuals.
+b-Easy handling of the app and user friendly.
+
+3.DOWNLOADING INSTRUCTION
+
+a-Download the apk from package.
+b.Click on apk.
+c.It will download automatically and ask for necessary permissions.
+
+4.USER MANUAL
+
+a.Click on launcher icon.
+b.Add the tasks to be done.
+c.Press "ADD A NEW TASK".
+d.It also has a count of number of tasks to be done.
+e.Once the task is done, Select the "DONE!" option and it will delete the task.
+f.Subsequently the number of tasks needed to be done also reduces.
+g.The application also prompts before quiting the app.
+
+5.KNOWN ISSUES AT RELEASE
+
+a.The list is not saved which means that the app is needed to run in the background for saving the data of ToDo.
+b."ADD A NEW TASK" button itself doesn't shift the writing position to another tab, it needs to be done manually.
+
+
+
+
+
